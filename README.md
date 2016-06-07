@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/DrPaulBrewer/transpluck.svg?branch=master)](https://travis-ci.org/DrPaulBrewer/transpluck)
+[![Coverage Status](https://coveralls.io/repos/github/DrPaulBrewer/transpluck/badge.svg?branch=master)](https://coveralls.io/github/DrPaulBrewer/transpluck?branch=master)
+
 transpluck
 ----------
 
