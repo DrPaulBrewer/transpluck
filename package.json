@@ -1,0 +1,30 @@
+{
+  "name": "transpluck",
+  "version": "1.0.0",
+  "description": "transpose an array of array into an object of plucked series arrays",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --slow 50 --timeout 2000",
+    "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drpaulbrewer/transpluck.git"
+  },
+  "keywords": [
+      "transpose",
+      "pluck"
+  ],
+  "author": "drpaulbrewer@eaftc.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drpaulbrewer/transpluck/issues"
+  },
+  "homepage": "https://github.com/drpaulbrewer/transpluck#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "should": "^8.2.1"
+  }
+}
