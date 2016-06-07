@@ -1,6 +1,6 @@
 {
   "name": "transpluck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "transpose an array of array into an object of plucked series arrays",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,8 @@
     "url": "git+https://github.com/drpaulbrewer/transpluck.git"
   },
   "keywords": [
-      "transpose",
-      "pluck"
+    "transpose",
+    "pluck"
   ],
   "author": "drpaulbrewer@eaftc.com",
   "license": "MIT",
