@@ -8,7 +8,7 @@ Reformats csv-like array-of-array with header row into a dataframe-like object i
 
 ## Installation
 
-npm i transpluck -S
+`npm i transpluck -S`
 
 ## Dependencies
 
@@ -16,7 +16,7 @@ None.  Suitable for usage on nodejs or on the browser, via browserify.
 
 ## Initialization
 
-const transpluck = require('transpluck');
+`const transpluck = require('transpluck');`
 
 ## Usage
 
@@ -34,13 +34,13 @@ seriesData = transpluck(csvData);
 // {a: [1,2,8], b: [2,7,5], c: [3,1,6] }
 ```
 
-`transpluck(csvData, {pluck: ['b']})` returns only the plucked columns, using csvData[0] as the header row.
+`transpluck(csvData, {pluck: ['b']})` returns only the plucked columns, using `csvData[0]` as the header row.
 The pluck property must be an array, and should consist of a subset of the column names from the 0th row of the data.
 Missing items will be ignored, and will not appear as keys in the result.  
 
 --> `{b: [2,7,5]}`
 
-`transpluck(csvData, ['x','y','z'])` uses the explicit header ['x','y','z'], treats all rows of csvData as data
+`transpluck(csvData, ['x','y','z'])` uses the explicit header `['x','y','z']`, treats all rows of `csvData` as data
 
 --> `{x: ['a',1,2,8], y: ['b',2,7,5], z: ['c',3,1,6]}`
 
@@ -68,7 +68,7 @@ Remember that any header row in the csvData array-of-arrays is ignored when an e
 
 --> `{a: [1,2,8], c: [2,7,5] }`  not `c:[3,1,6]` because explicit header ['a','c'] means collect column 0 in property a, and column 1 in property c.  
 
-Most ill-formed parameter scenarios return undefined
+Ill-formed calls return `undefined`
 
 `transpluck() === undefined`
 
