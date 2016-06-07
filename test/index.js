@@ -23,6 +23,10 @@ describe('', function(){
 	assert.ok(transpluck([1,2,3,4,5])===undefined);
     });
 
+    it("transpluck([[1,1],[2,2]], 0) returns undefined ", function(){
+	assert.ok(transpluck([[1,1],[2,2]], 0)===undefined);
+    });
+
     it("transpluck([['a','b','c'],[1,2,3],[2,7,1],[8,5,6]]) returns {a:[1,2,8],b:[2,7,5],c:[3,1,6]}", function(){
 	transpluck([['a','b','c'],[1,2,3],[2,7,1],[8,5,6]]).should.deepEqual({a:[1,2,8],b:[2,7,5],c:[3,1,6]});
     });
