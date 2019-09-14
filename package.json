@@ -1,6 +1,6 @@
 {
   "name": "transpluck",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "transpose an array of array into an object of plucked series arrays",
   "main": "index.js",
   "scripts": {
